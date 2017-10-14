@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Temperature And Humidity
+	</title>
+	<style type="text/css">
+		#first{
+			height: 300px;
+			width: 300px;
+			margin: 200px;
+			margin-top: 100px;
+			margin-bottom: 50px;
+			display: inline-block;
+		}
+		#second{
+			height: 300px;
+			width: 300px;
+			margin: 100px 200px 50px 0;
+			display: inline-block;
+		}
+		#third{
+			margin-left: 400px;
+			font-size: 20px;
+
+		}
+		#forth{
+			height: 70px;
+			width: 250px;
+			margin-left: 400px;
+			display: inline-block;
+		}
+		#fifth{
+			height: 70px;
+			width: 250px;
+			
+			display: inline-block;
+		}
+		#btn{
+			height: 40px;
+			width: 150px;
+			font-family: Gabriola;
+			font-size: 25px;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+<div id="first">
+	<span style="font-size: 30px"><b>Temperature</b></span> (in degree celcius)
+	<br>
+	<span style="font-size: 250px">34</span>
+
+</div>
+<div id="second">
+	<span style="font-size: 30px"><b>Humidity</b></span> (in percentage)
+	<br>
+	<span style="font-size: 250px">76</span>
+</div>
+<div id="third"><b>
+	Do you want to turn on the fan for cooling effect?</b>
+</div>
+<div id="forth">
+	<form action="http://172.16.29.173:5000/fanon">
+		<input type="submit" value="Turn Fan On" id="btn">
+	</form>
+</div>
+
+<div id="fifth">
+	<form action="http://172.16.29.173:5000/">
+		<input type="submit" value="Go Back" id="btn">
+	</form>
+</div>
+</body>
+</html>

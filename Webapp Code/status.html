@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Current status
+	</title>
+	<style type="text/css">
+		#heading{
+			font-family: Gabriola;
+			color:blue;
+			font-size:35px;
+		}
+		#btn{
+			height: 40px;
+			width: 150px;
+			font-family: Gabriola;
+			font-size: 25px;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+
+<center>
+	<br>
+	<br><br><br>
+	<b><div id="heading">Soil Moisture</b><br></div>
+	{{soilmoisture}}
+	<br><br>
+	<b><div id="heading">Temperature and Humidity</b><br></div>
+	{{temperature}}(in degree celcius) and 46 (in percentage)<br><br>
+	<b><div id="heading">Light Intensity</b><br></div>
+	{{lightintensity}}
+	<br>
+	<br>
+	<br>
+	<div id="heading" style="color:red">Do you want to turn on the motor?</div>
+	<form action="http://172.16.29.173:5000/motoron">
+		<input type="submit" value="Yes" id="btn">
+	</form>
+	<br>
+	<form action="http://172.16.29.173:5000/">
+		<input type="submit" value="No" id="btn">
+	</form>
+</center>
+
+</body>
+</html>

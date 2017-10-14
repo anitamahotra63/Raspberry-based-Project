@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Start Led
+	</title>
+	<style type="text/css">
+		#first{
+			margin-left: 295px;
+			font-size: 25px;
+			font-family: Gabriola;
+		}
+		#img1{
+			height: 400px;
+			width: 600px;
+			margin-top: 20px;
+			margin-left: 350px;
+			margin-bottom: 20px;
+		}
+		#second{
+			height: 70px;
+			width: 250px;
+			margin-left: 400px;
+			display: inline-block;
+		}
+		#third{
+			height: 70px;
+			width: 250px;
+			margin-left: 50px;
+			display: inline-block;
+		}
+		#btn{
+			height: 50px;
+			width: 200px;
+			font-family: Gabriola;
+			font-size: 35px;
+		}
+	</style>
+</head>
+<body>
+	<img src="http://www.ratherboard.com/wp-content/uploads/2017/01/01_greenhouselamp.gif" id="img1">
+	<div id="first"><b>
+		System has started lightning your garden. The water pump will be off after 5 minutes. Since <br>there is not sunlight for quite sometime. We will take care of your plants by providing them with<br> proper lights</b>
+	</div>
+
+	<div id="second">
+		<form action="http://172.16.29.173:5000/ledoff">
+			<input type="submit" value="Turn Lights Off" id="btn">
+		</form>
+	</div>
+
+	<div id="third">
+		<form action="http://172.16.29.173:5000/">
+			<input type="submit" value="Go Back" id="btn">
+		</form>
+	</div>
+</body>
+</html>

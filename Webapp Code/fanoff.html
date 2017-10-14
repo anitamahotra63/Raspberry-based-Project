@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Beware!!
+	</title>
+	<style type="text/css">
+		#first{
+			height: 130px;
+			width: 700px;
+			margin-left: 100px;
+			margin-top: 20px;
+			font-family: Gabriola;
+			font-size: 35px;
+		}
+		#abc{
+			margin-top: 50px;
+			margin-left: 650px;
+			font-size: 25px;
+			color:red;
+		}
+		#btn{
+			height: 40px;
+			width: 150px;
+			font-family: Gabriola;
+			font-size: 25px;
+			border-radius: 10px;
+		}
+		#second{
+			margin-left: 630px
+		}
+		
+	</style>
+</head>
+<body>
+<div id="abc"><b>
+	Beware!!
+</b>
+</div>
+<div id="first">
+	<b><pre>
+	If you have turn on the fan for cooling effect,
+	   make sure to turn it off after sometime.
+<span style="font-size: 20px">             (Note) The cooling effect is automatic.Threshold temperature is 35 degree celcius.</span>
+	</pre></b>
+</div>
+<div id="second">
+	<form action="http://172.16.29.173:5000/fanoff">
+		<input type="submit" value="Turn Fan Off" id="btn">
+	</form>
+</div>
+</body>
+</html>

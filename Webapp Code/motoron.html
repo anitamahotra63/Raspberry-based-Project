@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Start Water Pump
+	</title>
+	<style type="text/css">
+		#first{
+			margin-left: 295px;
+			font-size: 30px;
+			font-family: Gabriola;
+		}
+		#img1{
+			height: 400px;
+			width: 600px;
+			margin-top: 70px;
+			margin-left: 350px;
+			margin-bottom: 20px;
+		}
+		#second{
+			height: 70px;
+			width: 250px;
+			margin-left: 400px;
+			display: inline-block;
+		}
+		#third{
+			height: 70px;
+			width: 250px;
+			margin-left: 50px;
+			display: inline-block;
+		}
+		#btn{
+			height: 50px;
+			width: 200px;
+			font-family: Gabriola;
+			font-size: 35px;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<img src="http://i.imgur.com/CX7p3l2.gif" id="img1">
+	<div id="first"><b>
+		System has started watering your garden. The water pump will be off after 5 minutes.</b>
+	</div>
+
+	<div id="second">
+		<form action="http://172.16.29.173:5000/motoroff">
+			<input type="submit" value="Turn Motor Off" id="btn">
+		</form>
+	</div>
+
+	<div id="third">
+		<form action="http://172.16.29.173:5000/">
+			<input type="submit" value="Go Back" id="btn">
+		</form>
+	</div>
+</body>
+</html>

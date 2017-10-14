@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Home Page
+	</title>
+	<style type="text/css">
+		#header{
+			border-radius: 15px;
+			height: 100px;
+			width: 1200px;
+			margin-left: 70px;
+			padding-left:50px;
+			font-size: 50px;
+			font-family: Gabriola;
+			background-color:  	#00FA9A;
+
+		}
+
+		#first{
+			display: inline-block;
+			height: 300px;
+			width: 680px;
+			margin-left: 70px;
+			font-size: 50px;
+		
+		}
+		#second{
+			display: inline-block;
+			height: 300px;
+			width: 350px;
+			margin-left: 170px;
+			font-size: 50px;
+		
+		}
+		#btn{
+			border-radius: 10px;
+			height: 40px;
+			width: 250px;
+			font-family: Gabriola;
+			font-size: 25px;
+		}
+		#footer{
+			margin-left: 700px;
+			
+			height: 200px;
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+
+<div id="header">
+	<centre><b>Smart Greenhouse System</b></centre>
+
+</div>
+
+<div id="first"><b><pre>
+A Simple Way to 
+Automatically Water 
+Your Plants Remotely 
+and Automatically.
+</pre>
+</b>	
+</div>
+
+<div id="second"><b>
+	<form action="http://172.16.29.173:5000/temphum">
+			<input type="submit" value="View Temperature & Humidity" id="btn">
+	</form>
+	<form action="http://172.16.29.173:5000/waterplants">
+			<input type="submit" value="Water Your Plants" id="btn">
+	</form>
+	<form action="http://172.16.29.173:5000/lights">
+			<input type="submit" value="Turn Lights On" id="btn">
+	</form>
+	<form action="http://172.16.29.173:5000/waterlevel">
+			<input type="submit" value="Check Water Level" id="btn">
+	</form>
+	
+	</b>
+</div>
+<div id="footer">
+	<img src="https://media.giphy.com/media/xTiTnsZ8v95BDWVHj2/giphy.gif" height="200px" width="200px">
+</div>
+
+</body>
+</html>
